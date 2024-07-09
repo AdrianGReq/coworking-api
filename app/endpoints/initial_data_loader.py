@@ -10,7 +10,7 @@ router = APIRouter()
 @router.post("/load_initial_data/")
 def load_initial_data(db: Session = Depends(get_db)):
     try:
-        # Cargar datos iniciales desde un archivo JSON
+        # Cargar datos iniciales desde JSON
         with open('initial_data.json', 'r') as file:
             data = json.load(file)
 
@@ -28,7 +28,7 @@ def load_initial_data(db: Session = Depends(get_db)):
             client = Client(**client_data)
             db.add(client)
 
-        db.commit()  # Commit here to ensure rooms and clients are saved before adding bookings
+        db.commit()  # Commit para asegurar que habitaciones y clientes se guardan antes de añadir bookings
 
         for booking_data in initial_bookings:
             booking_data["start_time"] = datetime.strptime(booking_data["start_time"], "%H:%M:%S").time()

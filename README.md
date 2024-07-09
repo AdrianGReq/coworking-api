@@ -21,7 +21,8 @@ Swagger UI: Herramienta para la documentación y prueba interactiva de la API, a
 
 1.Clona el repositorio:
 
-git clone <url-repositorio>
+git clone Adriangarciarequenacoworkingapi.bundle coworking-api
+
 cd coworking_api
 
 
