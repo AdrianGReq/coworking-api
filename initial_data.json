@@ -1,0 +1,14 @@
+{
+    "rooms": [
+        {"name": "Sala A", "opening_hour": "08:00:00", "closing_hour": "18:00:00", "capacity": 10},
+        {"name": "Sala B", "opening_hour": "08:00:00", "closing_hour": "18:00:00", "capacity": 5}
+    ],
+    "clients": [
+        {"name": "Cliente 1"},
+        {"name": "Cliente 2"}
+    ],
+    "bookings": [
+        {"room_id": 1, "client_id": 1, "start_time": "10:00:00", "end_time": "12:00:00"},
+        {"room_id": 2, "client_id": 2, "start_time": "14:00:00", "end_time": "16:00:00"}
+    ]
+}
